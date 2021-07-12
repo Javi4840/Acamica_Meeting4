@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--Para qué es esta linea???-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <form id=formulario1 method="POST">
+        <div>
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" placeholder="___-______-__" tabindex="3">
+        </div>
+        <div>
+            <label for="Anio_Nacimiento">Año de Nacimiento:</label>
+            <select name="anionacimento" tabindex="1">
+                <option value="2001">2001</option>
+                <option value="2002">2002</option>
+                <option value="2003">2003</option>
+            </select>
+        </div> 
+        <div>
+            <label for="lunes">Lunes</label>
+            <input type="checkbox" id="lunes">
+            <label for="martes">Martes</label>
+            <input type="checkbox" id="Martes">
+        </div>
+        <div>
+            <label>Estás de Acuerdo con los TyC?</label>
+            <label for="si">si</label>
+            <input type="radio" id="si" name="aswer">
+            <label for="no">no</label>
+            <input type="radio" id="no" name="aswer">
+        </div>
+            <input type="submit" value="crear usuario" form="formulario1"><p></p>
+    </form> 
+        <!--
+        <script type="text/javascript">
+            var n1 = parseInt(prompt("introduce un número"));
+            var n2 = parseInt(prompt("introduce otro número"));
+            var resultado = n1 + n2; 
+            alert("la suma es: " + resultado);
+        </script>
+        -->
+ 
+    <!--Ejercicio de CALCULADORA (Está incompleta, puede completarla un IF)--> 
+    <fieldset>
+        <legend>Ingrese Dos Números</legend>
+        <label for="">Número1:</label>
+        <input type="text" id="txtN1">
+        <br><br>
+        <label for="">Número2:</label>
+        <input type="text" id="txtN2">
+        <br><br>
+        <input type="button" onclick="sumar();" value="SUMAR">
+        <input type="button" onclick="restar ();" value="RESTAR">
+        <input type="button" onclick="multiplicar();" value="MULTIPLICAR">
+        <input type="button" onclick="dividir();" value="DIVIDIR"> 
+    </fieldset>
+    <script>
+        function sumar() {
+            var n1 = document.getElementById('txtN1').value;
+            var n2 = document.getElementById('txtN2').value;
+            var suma = parseInt(n1) + parseInt(n2);
+            alert("la suma es:" + suma)
+        }
+    </script>
+    <script>
+         function restar() {
+              var n1 = document.getElementById('txtN1').value;
+              var n2 = document.getElementById('txtN2').value;
+              var resta = parseInt(n1) - parseInt(n2);
+              alert("la resta es:" + resta)
+         }
+    </script>
+    <script>
+        function multiplicar() {
+             var n1 = document.getElementById('txtN1').value;
+             var n2 = document.getElementById('txtN2').value;
+             var multiplica = parseInt(n1) * parseInt(n2);
+             alert("la multiplicacion es:" + multiplica)
+        }
+   </script>
+    <script>
+        function dividir() {
+             var n1 = document.getElementById('txtN1').value;
+             var n2 = document.getElementById('txtN2').value;
+             var divide = parseInt(n1) / parseInt(n2);
+             alert("la División es:" + divide)
+        }
+   </script>
+
+    
+    <!-- Ejemplos del if else-->
+    <script>
+         if (10>20) {
+            console.log("es mayor")
+        } else 
+        {
+            console.log("es menor")
+        };
+
+    </script>
+
+
+    <!-- Ejemplos del operador Ternario-->
+    <script>
+        var num1 = 5; 
+        var num2 = 7;
+        var resultado = (num1 > num2)? "primer numero es mayor" : "segundo numero es menor o igual"; 
+        console.log (resultado);
+    </script>
+    
+
+    <!-- Ejemplo -->
+    <script>
+
+        
+    </script>
+
+    <form></form>
+
+    
+
+</body>
+</html>

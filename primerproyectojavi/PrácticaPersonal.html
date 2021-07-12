@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+        <!--También puedes establecer que las subsecciones de tu documento se reconozcan en diferentes idiomas-->
+    <head>
+       <!--head lo que no se muestra en la página 
+            enlaces CSS para darles un buen aspecto. 
+                <link rel="este atributo dice que es la hoja del estilo de doc" href="este otro que contiene la ruta al archivo de la hoja de estilo"> 
+            JS para añadir funcionalidades interactivas, como reproductores de vídeo, mapas, juegos y demás
+                <script src="este atributo tiene la ruta al JavaScript que quieres cargar" defer="que básicamente le dice al navegador que cargue el JavaScript al mismo tiempo que el HTML de la páginas (hace que todo el HTML se cargue antes de ejecutar el JavaScript"></script> 
+        Estos metadatos "meta" y "title" es importante porque lo muestran los motos de búsqueda en sus descripciones de resultado por ejm
+            --> 
+        <meta name="description" content="Los ensayos personales de Javier Arroyave sobre lo que va consultando dutante la cursada. Porque la mejor manera de aprender es ir haciendo lo que estudias">
+        <meta charset="utf-8">
+        <title>ENSAYO Personal; VEAMOS CAMBIOS!</title>
+        <script type=”tex/javascript”></script> <!--declaración el código fuente JavaScript en HTML; Estará bien??-->
+        <script src="Sobre.js" defer></script> <!-- JS como doc externo.  el atributo defer, que le dice al navegador que continúe descargando el contenido HTML una vez que se ha alcanzado la etiqueta del elemento <script>.-->
+    <head>
+
+    <body>
+            <h1>Ensayo en <em>Bloc de Notas</em></h1>
+            <p> <em>Mi <strong> Gato </strong> </em> es muy gruñón</p>
+            <p> <img src="gatos-negros-destacado.jpg" alt="" width="400" height="250"> </p>
+            <p>Ahora veamos en Linea y Boque <p> Uno Uno </p> <p> Dos Dos </p> Tres Tres Cuatro Cuatro </p>
+            
+            <!--o en lista ordenada-->
+            <ol>
+                <li>uno uno</li>
+                <li>dos dos</li>
+                <li>tres tres</li>
+                <li>cuatro cuatro</li>
+            </ol>
+
+            uno uno<br> dos dos<br> tres tres <!--No utilices <br> para incrementar el espacio entre líneas de texto; para ello utiliza la propiedad margin de CSS o el elemento <p>.--> 
+
+            <h2>Ahora algo de atributos. <a title="GATOS GRUÑONES" href="https://www.google.com/search?source=univ&tbm=isch&q=gatos+gru%C3%B1ones&sa=X&ved=2ahUKEwichefX5KfxAhUmSTABHRXaCx8QjJkEegQIBRAC&biw=1242&bih=568" target="_blank">Más sobre GATOS</a></h2>
+            <p> <span style="color:blue;">Sigamos con</span> Algo Más!</p>
+
+            <div style="color: blue;"> Ejemplo de div </div>  
+
+<br><br><br>
+                    
+                <!--FOMULARIOS--> 
+                
+                <label>Pais</label>
+                <select name="pais">
+                    <option value="Argentina"> Argentina </option>
+                    <option value="Brasil"> Brasil </option>
+                    <option value="Mexico"> Mexico </option>
+                </select>
+                
+                <p>Un Ejemplo mas de Formularios:</p>
+
+                <form id=formulario1 method="POST">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre" placeholder="___-______-__" tabindex="3">
+                <p> <label for="Anio Nacimiento">Año de Nacimiento:</label>
+                    <select name="anionacimento" tabindex="1">
+                        <option>2001</option>
+                        <option>2001</option>
+                        <option>2002</option>
+                    </select> </p>
+                    <label for="lunes">Lunes</label>
+                    <input type="checkbox" id="lunes">
+                    <label for="martes">Martes</label>
+                    <input type="checkbox" id="Martes">
+                <p> <label>Estás de Acuerdo con los TyC?</label>
+                    <label for="si">si</label>
+                    <input type="radio" id="si" name="aswer">
+                    <label for="no">no</label>
+                    <input type="radio" id="no" name="aswer"></p> 
+                    <input type="submit" value="crear usuario" form="formulario1">
+                </form> 
+<br><br><br>
+ 
+                    <p id="para">Cualquier texto acá</p>
+                    <button onclick="changeColor('blue');">Azul</button>
+                    <button onclick="changeColor('red');">Rojo</button>
+
+                    <script>
+                    function changeColor(newColor) {
+                        var elem = document.getElementById('para');
+                        elem.style.color = newColor;
+                     }
+                     </script>
+
+                     <script>
+                         var condicionTres = (0 || 1);
+                         
+                     </script>
+                
+            <p></p> 
+    </body>
+</html>
+
